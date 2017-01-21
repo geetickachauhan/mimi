@@ -1,0 +1,23 @@
+{
+  "name": "mimi",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "clarifai": "^2.1.0-dev"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geetickachauhan/mimi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geetickachauhan/mimi/issues"
+  },
+  "homepage": "https://github.com/geetickachauhan/mimi#readme"
+}
