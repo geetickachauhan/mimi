@@ -70,18 +70,17 @@
               <div id="cam"></div>
             </div>
             <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <button  onclick="snap()" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+                <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+                <span class="visuallyhidden">add</span>
+              </button>
               <div class="minilogo"></div>
               <div>
                 <strong>Webcam</strong>
               </div>
             </div>
           </div>
-
           <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-            <button  onclick="snap()" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
-              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
-              <span class="visuallyhidden">add</span>
-            </button>
             <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
               <img src="images/logo.png">
               +1,337
@@ -143,16 +142,16 @@
 
       Webcam.set({
         // live preview size
-        width: '100%',
+        width: 420,
         height: 440,
 
         // device capture size
-        // dest_width: 640,
-        // dest_height: 480,
+        dest_width: 640,
+        dest_height: 480,
 
         // final cropped size
-        // crop_width: 480,
-        // crop_height: 480,
+        crop_width: 480,
+        crop_height: 480,
 
         // format and quality
         image_format: 'jpeg',
