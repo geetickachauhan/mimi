@@ -163,9 +163,8 @@
       function snap() {
         // take snapshot and get image data
         Webcam.snap((data_uri) =>  {
-          console.log(data_uri);
-
-          ai.models.predict('Nationalities', data_uri.replace(/^data:image\/(.*);base64,/, ''))
+          const image = data_uri.replace(/^data:image\/(.*);base64,/, '');
+          ai.models.predict('Nationalities', image)
             .then(res => {
               console.log('data', res);
             })
