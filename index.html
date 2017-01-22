@@ -87,7 +87,7 @@
               +1,337
                -->
                <div id="results">
-                 
+
                </div>
             </div>
             <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
@@ -171,7 +171,7 @@
               const troll = res.data.outputs[0].data;
               console.log(troll);
               const output = troll.concepts.splice(0, 2)
-                  .map(({name, value}) => `<h3>${name} by ${value * 100}%</h3><br/>`)
+                  .map(({name, value}) => `<h3>${name} by ${Math.round10(value * 100)}%</h3><br/>`)
                   .join();
               $('#results').html(output);
             })
