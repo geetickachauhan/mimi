@@ -1,6 +1,7 @@
 body::before {
+    background-color: #546E7A;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     content: '';
     will-change: transform;
     z-index: -1;
@@ -15,7 +16,7 @@ body::before {
        (max-width: 1024px) and (-webkit-max-device-pixel-ratio: 1.5),
        (max-width: 1024px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');
+    /*background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');*/
   }
 }
 @media (min-width: 513px)  and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -23,7 +24,7 @@ body::before {
        (min-width: 1025px) and (max-width: 2048px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 1025px) and (max-width: 2048px) and (max-resolution: 1.5dppx)  {
   body::before {
-    background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');
+    /*background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');*/
   }
 }
 @media (min-width: 1025px) and (-webkit-min-device-pixel-ratio: 1.5),
@@ -31,7 +32,7 @@ body::before {
        (min-width: 2049px) and (-webkit-max-device-pixel-ratio: 1.5),
        (min-width: 2049px) and (max-resolution: 1.5dppx) {
   body::before {
-    background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');
+    /*background-image: url('https://drscdn.500px.org/photo/72196451/q%3D80_m%3D2000/875048703cf3eca8899c664cba224b62');*/
   }
 }
 body .demo-blog {
@@ -52,7 +53,7 @@ body .demo-blog {
 }
 
 .demo-blog.mdl-layout .mdl-layout__content {
-  padding-top: 230px;
+  padding-top: 30px;
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
@@ -66,7 +67,7 @@ body .demo-blog {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  min-height: 360px;
+  height: 560px;
 }
 .demo-blog .mdl-card__title {
   padding: 16px;
@@ -509,4 +510,9 @@ body .demo-blog {
   width: 500px;
   height: 450px;
   z-index: 100;
+  padding-top: 12px;
+}
+.logo{
+  padding-left: 80px;
+  padding-bottom: 40px;
 }
