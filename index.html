@@ -164,7 +164,9 @@
         Webcam.snap((data_uri) =>  {
           console.log(data_uri);
 
-          ai.models.predict('Nationalities', data_uri)
+          const imageData = data_uri.replace(/^data:image\/(.*);base64,/, '');
+
+          ai.models.predict('Nationalities', imageData)
             .then(res => {
               console.log('data', res);
             })
