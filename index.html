@@ -136,8 +136,6 @@
     <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-2.0.9.js"></script>
     <script>
       const ai = new Clarifai.App(
-        // 'I57g0yIxi7LwlTXNyVDMKEnNacYploQ0kpPPLpos',
-        // 'x_TqrBOKHAcCnOq6nwmik07tlL-sYY4gnrwRaG36'
         'C8ayvZIdsAGNLNT1nPBgMMHOfehSGQrZVt0RhTME',
         'Yhua-a__r_uGeL8-Frgk9sK2Keqv1Uhe_BGkbezV'
       );
@@ -166,7 +164,7 @@
         Webcam.snap((data_uri) =>  {
           console.log(data_uri);
 
-          ai.models.predict('Nationalities', data_uri)
+          ai.models.predict('e8af7d3bc7144cf7b93a1b6bf3cfbd03', data_uri)
             .then(res => {
               console.log('data', res);
             })
