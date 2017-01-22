@@ -67,7 +67,7 @@
               </div>
 
 
-              <button style="float:right; margin-right: 0px !important;" onclick="snap()" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+              <button style="float:right; margin-right: 0px !important; background: #4FC3F7" onclick="snap()" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab">
                 <i class="material-icons mdl-color-text--white" role="presentation">camera</i>
                 <span class="visuallyhidden">Take Photo</span>
               </button>
@@ -160,7 +160,7 @@
               console.log(troll);
               const output = troll.concepts.splice(0, 2)
                   .map(({name, value}) => `<h3>${name} by ${(value * 100).toFixed(2)}%</h3><br/>`)
-                  .join();
+                  .join().replace(',', '');
               $('#results').html(output);
             })
             .catch(err => console.error(err));
