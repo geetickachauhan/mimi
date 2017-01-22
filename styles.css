@@ -40,7 +40,7 @@ body .demo-blog {
 }
 
 .demo-blog .demo-blog__posts {
-  max-width: 1200px;
+  max-width: 900px;
   padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
