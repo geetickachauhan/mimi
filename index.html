@@ -48,23 +48,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
   </head>
   <body>
     <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
       <main class="mdl-layout__content">
+        <div class="logo">
+          <img src="./MiMi-logo.png" height="150" alt="">
+        </div>
         <div class="demo-blog__posts mdl-grid">
-          <div class="mdl-card  mdl-cell mdl-cell--6-col">
+          <div class="mdl-card  mdl-cell mdl-cell--6-col" style="height: 540">
             <div class=" mdl-color-text--grey-50">
               <div id="cam"></div>
             </div>
@@ -102,12 +94,6 @@
             </div>
           </div>
 
-          <div class="mdl-dell mdl-cell--2-col">
-            <div class="credits">
-              <p>Built with <br> <img src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/16/Heart-icon.png"  height="16" alt=""> <br> by FIU Students</p>
-            </div>
-          </div>
-
           <!-- <nav class="demo-nav mdl-cell mdl-cell--12-col">
             <div class="section-spacer"></div>
             <a href="entry.html" class="demo-nav__button" title="show more">
@@ -121,11 +107,9 @@
 
 
 
-        <!-- <footer class="mdl-mini-footer" style="margin-top: 15%">
+        <footer class="mdl-mini-footer" style="margin-top: 6%">
           <div class="mdl-mini-footer--left-section">
-            <button class="mdl-mini-footer--social-btn social-btn social-btn__github">
-              <span class="visuallyhidden">Github</span>
-            </button>
+            <h5>Built with <img src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/16/Heart-icon.png"  height="16" alt=""> by FIU Students</h5>
           </div>
           <div class="mdl-mini-footer--right-section">
             <button class="mdl-mini-footer--social-btn social-btn__share">
@@ -133,7 +117,7 @@
               <span class="visuallyhidden">share</span>
             </button>
           </div>
-        </footer> -->
+        </footer>
       </main>
       <div class="mdl-layout__obfuscator"></div>
     </div>
@@ -149,15 +133,15 @@
 
       Webcam.set({
         // live preview size
-        width: 640,
+        width: 540,
         height: 480,
 
         // device capture size
-        dest_width: 640,
+        dest_width: 540,
         dest_height: 480,
 
         // final cropped size
-        crop_width: 640,
+        crop_width: 540,
         crop_height: 480,
 
         // format and quality
