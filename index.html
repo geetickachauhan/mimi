@@ -144,15 +144,15 @@
         // live preview size
         width: 420,
         height: 440,
-        
+
         // device capture size
         dest_width: 640,
         dest_height: 480,
-        
+
         // final cropped size
         crop_width: 480,
         crop_height: 480,
-        
+
         // format and quality
         image_format: 'jpeg',
         jpeg_quality: 90
@@ -164,7 +164,7 @@
         Webcam.snap((data_uri) =>  {
           console.log(data_uri);
 
-          ai.models.predict('e8af7d3bc7144cf7b93a1b6bf3cfbd03', data_uri)
+          ai.models.predict('Nationalities', data_uri)
             .then(res => {
               console.log('data', res);
             })
@@ -174,10 +174,10 @@
 
         });
       }
-      
-      
+
+
       Webcam.attach( '#cam' );
-      
+
     </script>
   </body>
   <script>
