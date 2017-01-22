@@ -166,7 +166,7 @@
         Webcam.snap((data_uri) =>  {
           console.log(data_uri);
 
-          ai.models.predict('e8af7d3bc7144cf7b93a1b6bf3cfbd03', data_uri)
+          ai.models.predict('Nationalities', data_uri)
             .then(res => {
               console.log('data', res);
             })
