@@ -170,10 +170,10 @@
             .then(res => {
               const troll = res.data.outputs[0].data;
               console.log(troll);
-              troll.concepts.splice(0, 2)
-                  .forEach(({name, value}) => {
-                    $('#results').html(`* <h3>${name} by ${value}%</h3><br/>`)
-                  });
+              const output = troll.concepts.splice(0, 2)
+                  .map(({name, value}) => `* <h3>${name} by ${value}%</h3><br/>`)
+                  .join();
+              $('#results').html(output);
             })
             .catch(err => console.error(err));
         });
