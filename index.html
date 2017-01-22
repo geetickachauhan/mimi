@@ -163,12 +163,10 @@
           const image = data_uri.replace(/^data:image\/(.*);base64,/, '');
           ai.models.predict('Nationalities', image)
             .then(res => {
-              console.log('data', res);
+              const troll = res.data.outputs[0].data;
+              console.log(troll);
             })
-            .catch(err => {
-              console.error(err);
-            });
-
+            .catch(err => console.error(err));
         });
       }
 
