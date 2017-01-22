@@ -67,7 +67,7 @@ body .demo-blog {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  height: 570px;
+  height: 550px;
   border-radius: 5px;
 }
 .demo-blog .mdl-card__title {
