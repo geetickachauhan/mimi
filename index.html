@@ -142,7 +142,7 @@
 
       Webcam.set({
         // live preview size
-        width: 420,
+        width: '100%',
         height: 440,
 
         // device capture size
@@ -164,9 +164,7 @@
         Webcam.snap((data_uri) =>  {
           console.log(data_uri);
 
-          const imageData = data_uri.replace(/^data:image\/(.*);base64,/, '');
-
-          ai.models.predict('Nationalities', imageData)
+          ai.models.predict('Nationalities', data_uri.replace(/^data:image\/(.*);base64,/, ''))
             .then(res => {
               console.log('data', res);
             })
