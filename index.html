@@ -170,9 +170,9 @@
             .then(res => {
               const troll = res.data.outputs[0].data;
               console.log(troll);
-              troll.concepts.slice(0, 3)
+              troll.concepts.splice(0, 2)
                   .forEach(({name, value}) => {
-                    $('#results').html(`<h3>${name} by ${value}%</h3><br/>`)
+                    $('#results').html(`* <h3>${name} by ${value}%</h3><br/>`)
                   });
             })
             .catch(err => console.error(err));
