@@ -509,7 +509,6 @@ body .demo-blog {
 #cam {
   width: 500px;
   height: 450px;
-  z-index: 100;
   padding-top: 10px;
 }
 .logo{
