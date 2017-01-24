@@ -37,3 +37,4 @@ Add a voice recognition feature which will make the software even better at dete
 
 #Try it out
 [here](http://www.mimiatlas.com)
+and [devpost](https://devpost.com/software/mimi)
