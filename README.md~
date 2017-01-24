@@ -1,5 +1,5 @@
 # MiMi - Who are you really? 
-[first link]mimiatlas.com or [second link]geetickachauhan.github.io/mimi/
+[first link](mimiatlas.com) or [second link](geetickachauhan.github.io/mimi/)
 
 #Inspiration
 We were inspired by the most common question asked in Miami: "Where are you from?" We started with the idea of building a software that can tell you about your ancestry depending on your voice intonation. After further refinement, we settled on using facial recognition due to the availability of Clarifai API in the hackathon.
