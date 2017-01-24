@@ -36,4 +36,4 @@ With Clarifai, HTML, JS, and CSS. Deployed the app using Github pages.
 Add a voice recognition feature which will make the software even better at determining where the subjects are from. - Determine what countries they are from as well.
 
 #Try it out
-(mimiatlas.com)
+[here](mimiatlas.com)
