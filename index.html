@@ -79,8 +79,11 @@
                -->
               <div id="results"></div>
               <div id="intro">
-                <p>
-                  Let us guess what continent you're from! Look straight into the camara and make sure your face is fully displayed on the screen. Do not smile. 😐
+                <p style="text-align:center">
+                  Let us guess what continent you're from! Look straight into the camara and make sure your face is fully displayed on the screen.
+                </p>
+                <p style="text-align:center">
+                  <strong>Do not smile.</strong> 😐
                 </p>
               </div>
               <div id="loading"></div>
@@ -91,7 +94,7 @@
                 <strong>Who are you, <em>really</em>?</strong>
               </div>
               <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
-                <li class="mdl-menu__item">About</li>
+                <a href="https://devpost.com/software/mimi" target="_blank" style="text-decoration: none"><li class="mdl-menu__item">About</li></a>
               </ul>
               <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
                 <i class="material-icons" role="presentation">more_vert</i>
@@ -116,12 +119,6 @@
         <footer class="mdl-mini-footer" style="margin-top: 6%">
           <div class="mdl-mini-footer--left-section">
             <h5>Built with <img src="http://icons.iconarchive.com/icons/designbolts/free-valentine-heart/16/Heart-icon.png"  height="16" alt=""> by FIU Students</h5>
-          </div>
-          <div class="mdl-mini-footer--right-section">
-            <button class="mdl-mini-footer--social-btn social-btn__share">
-              <i class="material-icons" role="presentation">share</i>
-              <span class="visuallyhidden">share</span>
-            </button>
           </div>
         </footer>
       </main>
@@ -157,12 +154,12 @@
 
 
       function snap() {
-        var spinner = '<i class="fa fa-circle-o-notch fa-spin"></i>';
+        var spinner = '<i class="fa fa-circle-o-notch fa-spin fa-5x"></i>';
 
         $('#intro').remove();
         $('#loading').append(spinner);
         // take snapshot and get image data
-        Webcam.snap((data_uri) =>  {
+        Webcam.snap(data_uri =>  {
           const image = data_uri.replace(/^data:image\/(.*);base64,/, '');
           ai.models.predict('Nationalities', image)
             .then(res => {
