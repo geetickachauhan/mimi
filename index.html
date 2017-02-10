@@ -78,12 +78,12 @@
               +1,337
                -->
               <div id="results"></div>
-              <!-- <div id="intro">
+              <div id="intro">
                 <p>
                   Let us guess what continent you're from! Look straight into the camara and make sure your face is fully displayed on the screen. Do not smile. 😐
                 </p>
               </div>
-              <div class="loading"></div> -->
+              <div class="loading"></div>
 
             </div>
             <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
@@ -157,10 +157,10 @@
 
 
       function snap() {
-        // var spinner = '<i class="fa fa-circle-o-notch fa-spin"></i>';
-        //
-        // $('#intro').remove();
-        // $('#loading').append(spinner);
+        var spinner = '<i class="fa fa-circle-o-notch fa-spin"></i>';
+
+        $('#intro').remove();
+        $('#loading').append(spinner);
         // take snapshot and get image data
         Webcam.snap((data_uri) =>  {
           const image = data_uri.replace(/^data:image\/(.*);base64,/, '');
@@ -172,7 +172,7 @@
                   .map(({name, value}) => `<h3>${name} by ${(value * 100).toFixed(2)}%</h3><br/>`)
                   .join().replace(',', '');
 
-              // $('#loading').remove();
+              $('#loading').remove();
               $('#results').html(output);
             })
             .catch(err => console.error(err));
